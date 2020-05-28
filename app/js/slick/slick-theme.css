@@ -55,7 +55,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: white;
+    background-color: transparent;
     /* color: #777777; */
     border: 1px solid #eeeeee;
 }
@@ -221,8 +221,8 @@
 }
 
 @media screen and (max-width: 900px) {
-  /* .intro_slider .slick-arrow{
+  .intro_slider .slick-arrow{
       display: none;
       visibility: hidden;
-  } */
+  }
 }
