@@ -1,27 +1,108 @@
 .intro {
-    width: 100%;
+    // border: 1px solid red;
     min-height: 650px;
-    
+    position: relative;
+    // background-position: center;
+    // background-size: cover;
+    @include respond-to(md) {
+        // height: 450px;          
+    }
+    .intro_slider {
+        position: relative;
+      
+        .slider_item {
+            background-size: cover;
+            min-height: 650px;
 
-    // background-image: url(/img/intro/background_intro_1.png);
-    .content_container {
-        max-width: 1374px;
+        }
+        .content_section {
+            // position: absolute;
+        }
+    }
+    .content_section {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 650px;
+        
         display: flex;
-        flex-direction: column;
-        
+        justify-content: space-between;
         align-items: center;
-        border: 1px solid red;
-        
-            .heading {
-                font-weight: 300;
-                line-height: 24px;
-                color: white;
-                max-width: 700px;
-                padding: 20px 30px 20px 30px;
-                text-transform: uppercase;
-                letter-spacing: 4.8px;
-                // padding: 5px 15px;
-                background-color: black;
+        z-index: 99;
+            .arrow {
+                width: 42px;
+                height: 42px;
+                border: 2px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                color: black;
+                @include respond-to(sm) {
+                    display: none;      
+                }
+            }
+
+            .arrow:hover {
+                color: wheat;
+                transition: .3s;
+                border-color: wheat;
+                cursor: pointer;
+            }
+
+            .intro_content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+                .main_title {
+                    display: block;
+                    max-width: 700px;
+                    text-transform: uppercase;
+                    color: white;
+                    height: 56px;
+                    background-color: #000000;
+                    font-weight: 300;
+                    text-align: center;
+                    letter-spacing: 4.8px;
+                    @include respond-to(sm) {
+                        font-size: 18px;
+                        padding-top: 8px;
+                        max-width: 200px;
+                    }
+                }
+
+                .main_subtitle {
+                    color: #000000;
+                    text-transform: uppercase;
+                    /* Text style for "M, inimal" */
+                    letter-spacing: 7.2px;
+                    padding-top: 50px;
+                    @include respond-to(sm) {
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+
+    }
+
+    
+    .dots {
+        width: 78px;
+        margin: 0 auto;
+        display: flex;
+        margin-top: 210px;
+            .dots_item {
+                width: 15px;
+                height: 15px;
+                background-color: white;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+
+            .active {
+                border: 4px solid black;
             }
     }
 }

@@ -1,20 +1,34 @@
 header
-    section.header.content_container
-        .logo
-            img(src='/img/logo.png')
-        nav.header_navigation
-            span.black_line
-            li.menu_item 
-                a.menu_link(href='#') HOME 
-            li.menu_item 
-                a.menu_link(href='#') ABOUT
-            li.menu_item 
-                a.menu_link(href='#') PORTFOLIO 
-            li.menu_item 
-                a.menu_link(href='#') BLOG
-            li.menu_item 
-                a.menu_link(href='#') CONTACT
+    section.header.content_section
+        .logo_wrap
+            img(src="img/logo.png", alt="logo")
         
-
-
-    
+        .mobile_menu_wrap
+            nav.mobile_menu_navigation
+                li.mobile_menu_item
+                    a Home
+                li.mobile_menu_item
+                    a About
+                li.mobile_menu_item
+                    a Portfolio
+                li.mobile_menu_item
+                    a Blog
+                li.mobile_menu_item
+                    a Contact
+        .mobile_menu
+            .hamburger_button(id="hamburger_button")
+                .hamburger_button_item
+                .hamburger_button_item
+                .hamburger_button_item
+        nav.header_navigation
+            span.black_trait
+            li.menu_item
+                a Home
+            li.menu_item
+                a About
+            li.menu_item
+                a Portfolio
+            li.menu_item
+                a Blog
+            li.menu_item
+                a Contact
