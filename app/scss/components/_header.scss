@@ -43,7 +43,7 @@
             bottom: 0;
             right: -300px;
             background-color: white;
-            z-index: 1;
+            z-index: 999999;
             transition: .3s;
             .mobile_menu_navigation {
                 display: flex;
@@ -73,7 +73,7 @@
                 position: fixed;
                 top: 30px;
                 right: 20px;
-                z-index: 9;
+                z-index: 99999999;
                 .hamburger_button_item {
                     width: 25px;
                     height: 2px;
