@@ -1,0 +1,15 @@
+.likes:hover {
+    cursor: pointer;
+    transition: .3s;
+    
+    i {
+        color: wheat;
+    }
+    
+}
+
+.likes:active {
+    i {
+        color: red;
+    }
+}

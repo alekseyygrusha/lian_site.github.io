@@ -28,6 +28,23 @@
       $('.hamburger_button').toggleClass('active_button');
     })
 
+    $('.project_slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav',
+    });
+
+    $('.slider-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.project_slider',
+      
+      focusOnSelect: true,
+      
+      
+    });
     
   });
   

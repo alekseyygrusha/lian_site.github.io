@@ -1,0 +1,176 @@
+.latest_projects {
+    
+    .sections_intro {
+        background-color: #e2e2e2;
+        .content_section {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .sections_intro_text {
+                z-index: 99;
+            }
+        }
+         .latest_background {
+             width: 570px;
+             height: 350px;
+             position: absolute;
+             right: 0;
+             z-index: 1;
+            //  margin: 0 127px 0 auto;
+         }
+       
+    }
+
+    .project {
+        margin-top: 72px;
+        display: flex;
+        justify-content: space-between;
+        @include respond-to(lg) {
+            flex-wrap: wrap;
+            max-width: 554px;
+            margin: 60px auto 0 auto;
+        }
+        .project_info {
+            max-width: 554px;
+            margin: 0px 12px;
+            .project_header {
+                .project_title {
+                    color: #000000;
+                    font-family: "Roboto - Regular";
+                    font-size: 30px;
+                    font-weight: 400;
+                    letter-spacing: 6px;
+                    line-height: 36px;
+                    text-transform: uppercase;
+                }
+
+                .project_subtitle {
+                    font-family: "Roboto - Bold";
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 0.4px;
+                    line-height: 30px;
+                    padding: 10px 0 25px 0;
+                }
+            }
+
+            .project_body {
+                border-top: 1px solid #cccccc;
+                border-bottom: 1px solid #cccccc;
+                .project_date {
+                    font-family: "Roboto - Bold";
+                    font-weight: 700;
+                    letter-spacing: 0.35px;
+                    line-height: 48px;
+                    /* Text style for "" */
+                    font-family: "Font Awesome";
+                    font-weight: 400;
+                    letter-spacing: 0.35px;
+                    line-height: 48px;
+
+                    .date {
+                        margin-right: 40px;
+                    }
+                }
+
+                .project_text {
+                    color: #777777;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    padding-bottom: 50px;
+                }
+            }
+
+            .project_footer {
+                .roles , 
+                .tags { 
+                    color: #333333;
+                    font-family: "Roboto - Bold";
+                    font-weight: 700;
+                    letter-spacing: 0.4px;
+                    text-transform: uppercase;
+                    padding-bottom: 15px;
+                    padding-top: 40px;
+                }
+            }
+        }
+        .slider {
+            max-width: 552px;
+            .project_slider {
+                width: 100%;
+                height: 350px;
+                @include respond-to(lg) {
+                   margin-top: 40px;
+                }
+    
+                @include respond-to(sm) {
+                    max-width: 375px;
+                   
+                 }
+                 @include respond-to(xs) {
+                    max-width: 320px;
+                   
+                 }
+                    .project_slider_item {
+                        img {
+                            width: 100%;
+                            height: 350px;
+                        }
+                        
+                    }
+    
+                    
+            }
+        }
+        
+
+        .slider-nav {
+            margin-top: 10px;
+            
+            .slider-nav_item {
+                width: 120px;
+                height: 115px;
+                margin-right: 5px;
+                position: relative;
+                @include respond-to(lg) {
+                    width: 98px;
+                    height: 115px;
+                }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    .black_hover {
+                        position: absolute;
+                        background-color: #000000;
+                        opacity: .1;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+            }
+
+            .last_item {
+                margin-right: 0px;
+            }
+            
+
+        }
+
+        .slider-nav_item:hover {
+            cursor: pointer;
+            .black_hover {
+                opacity: .4;
+                transition: .3s;
+            }
+        }
+
+        
+
+        
+    }
+}
